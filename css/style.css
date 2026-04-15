@@ -1,0 +1,413 @@
+/* ===================================================
+   Academic Website — Economics PhD Candidate Style
+   =================================================== */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy:      #1a2e4a;
+  --blue:      #2d6a9f;
+  --blue-lt:   #e8f0f8;
+  --text:      #1c1c1e;
+  --muted:     #5a6478;
+  --border:    #dde3ec;
+  --bg:        #ffffff;
+  --bg-alt:    #f7f9fb;
+  --max-w:     980px;
+  --font:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* --- Layout --- */
+.site-wrapper {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Navigation --- */
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 1.1rem 0;
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+}
+
+nav .nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+nav .site-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+nav .site-name a { color: inherit; }
+nav .site-name a:hover { text-decoration: none; color: var(--blue); }
+
+nav .nav-links {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+nav .nav-links a {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 450;
+  letter-spacing: 0.01em;
+}
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  color: var(--blue);
+  text-decoration: none;
+}
+nav .nav-links a.active {
+  color: var(--navy);
+  font-weight: 550;
+}
+
+/* --- Page header --- */
+.page-header {
+  padding: 3.5rem 0 0;
+}
+
+/* --- Home page: profile block --- */
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.4rem;
+  padding: 3.2rem 0 2.8rem;
+  align-items: start;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.profile-photo {
+  width: 320px;
+  height: 400px;
+  background: var(--blue-lt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.profile-info h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info .affiliation {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.profile-info p {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.85rem;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.profile-links a {
+  font-size: 0.83rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.28rem 0.7rem;
+  color: var(--blue);
+  background: var(--bg-alt);
+  transition: border-color 0.15s, background 0.15s;
+}
+.profile-links a:hover {
+  border-color: var(--blue);
+  background: var(--blue-lt);
+  text-decoration: none;
+}
+
+/* --- Fields of interest --- */
+.fields {
+  border-top: 1px solid var(--border);
+  padding: 1.6rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.fields strong { color: var(--text); }
+
+/* --- Contact block on home --- */
+.contact-block {
+  padding: 1.4rem 0 3rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.contact-block a { color: var(--blue); }
+
+/* --- Section headings --- */
+h2.section-title {
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--navy);
+  margin-bottom: 1.6rem;
+}
+
+/* --- Paper list --- */
+.paper-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.paper-item {}
+
+.paper-item .paper-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--bg);
+  background: var(--blue);
+  border-radius: 2px;
+  padding: 0.12rem 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.paper-item .paper-tag.jmp {
+  background: var(--navy);
+}
+
+.paper-item .paper-tag.pub {
+  background: #2a7a4b;
+}
+
+.paper-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 0.2rem;
+}
+.paper-item h3 a { color: inherit; }
+.paper-item h3 a:hover { color: var(--blue); text-decoration: none; }
+
+.paper-item .paper-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.55rem;
+}
+.paper-item .paper-meta em { font-style: italic; }
+
+.paper-item .paper-abstract {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.paper-item .paper-links {
+  margin-top: 0.55rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  font-size: 0.83rem;
+}
+.paper-item .paper-links a {
+  color: var(--blue);
+}
+
+/* --- Work in progress section --- */
+.wip-list {
+  list-style: none;
+  padding-bottom: 3rem;
+}
+.wip-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.93rem;
+  color: var(--text);
+}
+.wip-list li:last-child { border-bottom: none; }
+.wip-list .wip-coauthors {
+  font-size: 0.83rem;
+  color: var(--muted);
+  margin-left: 0.5rem;
+}
+
+/* --- Teaching table --- */
+.teaching-section {
+  padding-bottom: 3rem;
+}
+.teaching-section p.role-note {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.course-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.course-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.course-item:last-child { border-bottom: none; }
+.course-item .course-name {
+  font-size: 0.93rem;
+  font-weight: 550;
+  color: var(--text);
+}
+.course-item .course-detail {
+  font-size: 0.83rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+.course-item .course-terms {
+  font-size: 0.83rem;
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* --- CV page --- */
+.cv-section {
+  padding-bottom: 3rem;
+}
+.cv-download-bar {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.cv-download-bar a {
+  white-space: nowrap;
+  font-weight: 550;
+}
+
+.cv-block {
+  margin-bottom: 2.2rem;
+}
+.cv-block h3 {
+  font-size: 0.85rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+.cv-entry {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.cv-entry:last-child { border-bottom: none; }
+.cv-entry .cv-title { font-weight: 500; color: var(--text); }
+.cv-entry .cv-sub { font-size: 0.83rem; color: var(--muted); margin-top: 0.1rem; }
+.cv-entry .cv-year { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+
+/* --- Footer --- */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.8rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+  .profile-photo {
+    width: 80px;
+    height: 100px;
+  }
+  nav .nav-links {
+    gap: 1rem;
+  }
+  .course-item {
+    grid-template-columns: 1fr;
+  }
+  .cv-entry {
+    grid-template-columns: 1fr;
+  }
+  .cv-download-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

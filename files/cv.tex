@@ -1,9 +1,8 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 
 % Packages
 \usepackage[margin=0.8in]{geometry}
 \usepackage{enumitem}
-\usepackage{fontawesome}
 \usepackage{hyperref}
 \usepackage{xcolor}
 
@@ -19,145 +18,187 @@
 % Section formatting
 \usepackage{titlesec}
 \titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0em}{}[\titlerule]
-\titlespacing*{\section}{-20pt}{20pt}{10pt}
+\titlespacing*{\section}{-20pt}{14pt}{8pt}
 
 % Adjust line spacing
-\renewcommand{\baselinestretch}{1.15}
+\renewcommand{\baselinestretch}{1.1}
+
+% Year-column row: left-aligned date label, wrapping content on the right
+\newcommand{\cvrow}[2]{%
+    \noindent\makebox[1.7in][l]{#1}%
+    \begin{minipage}[t]{\dimexpr\textwidth-1.7in\relax}#2\end{minipage}%
+    \par\vspace{3pt}}
 
 % Hyperref setup
 \hypersetup{
     colorlinks=true,
     linkcolor=darkgray,
-    filecolor=darkgray,      
+    filecolor=darkgray,
     urlcolor=darkgray,
     citecolor=darkgray,
-    pdftitle={Roxana Gonzalez CV},
+    pdftitle={Roxana Gonzalez - Curriculum Vitae},
     pdfauthor={Roxana Gonzalez}
 }
 
 \begin{document}
 
+%==================================================================
+% HEADER / CONTACT INFORMATION
+%==================================================================
 \begin{center}
-    {\Large \textbf{ROXANA GONZALEZ}}\\
-    Last Updated: \today\\
-    \vspace{2pt}
-    roxanag@email.sc.edu\\
-    linkedin.com/in/roxana-gonzalezcortes/
-    % \href{https://www.linkedin.com/in/roxana-gonzalezcortes/}{Linked-In}
+    {\Large \textbf{ROXANA GONZALEZ}}
 \end{center}
-%------------------------------------------------------------------
+\vspace{4pt}
+\noindent
+\begin{minipage}[t]{0.52\textwidth}
+1155 Lady St, Apt 407\\
+Columbia, SC 29201\\
+Phone: (931) 239-0433
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+Email: \href{mailto:roxanag@email.sc.edu}{roxanag@email.sc.edu}\\
+Web: \href{https://roxana-gonzalez.github.io/}{roxana-gonzalez.github.io}\\
+Citizenship: United States
+\end{minipage}
+
+%==================================================================
+% EDUCATION
+%==================================================================
 \section*{EDUCATION}
-The University of South Carolina \hfill \textit{Expected} December 2026\\
-Ph.D. in Economics \\
+\cvrow{Expected Dec. 2026}{Ph.D. in Economics, University of South Carolina}
+\cvrow{May 2022}{B.A. in Economics, University of Tennessee \textit{(Cum Laude)}}
 
-The University of Tennessee \hfill May 2022\\
-Bachelor of Arts, Economics \textit{Cum Laude}
+%==================================================================
+% FIELDS OF INTEREST
+%==================================================================
+\section*{FIELDS OF INTEREST}
+Urban Economics, Public Economics, Large Language Models
 
-%------------------------------------------------------------------
-\section*{RESEARCH INTERESTS}
-Real Estate, Public Finance, Large Language Models
+%==================================================================
+% RESEARCH PAPERS
+%==================================================================
+\section*{RESEARCH PAPERS}
+``\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6776971}{Opportunity Zones \& Housing Supply}''\\
+Sole-Authored\\
+\textit{Under Review, Journal of Urban Economics}
 
-%------------------------------------------------------------------
-\section*{WORKING PAPERS}
-    \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6433258}{OZs \& Housing Supply: Do Place-Based Tax Subsidies Create Net New Construction?} (Sole-Authored) 
-    \vspace{0.3cm}
-    \par \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5410643}{What can LLMs tell us about the ETI?} (with Jason DeBacker and Max Ghenis)
-    \vspace{0.3cm}
-    \par Opportunity for Affordability: Tax Incentives and Rental Housing Markets (Sole-Authored)
+\vspace{6pt}
+``\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5410643}{What Can LLMs Tell Us About the ETI?}''\\
+with Jason DeBacker and Max Ghenis
 
-%------------------------------------------------------------------
-\section*{WORKS IN PROGRESS}
-    \par The Effectiveness of Local Flavored E-Cigarette Bans (with Kara Jones and Danna Thomas) \\
-%------------------------------------------------------------------
+\vspace{6pt}
+``Opportunity for Affordability: Tax Incentives and Rental Housing Markets''\\
+Sole-Authored\\
+\textit{Recipient of the Best Third-Year Paper Award}
+
+%==================================================================
+% WORK IN PROGRESS
+%==================================================================
+\section*{WORK IN PROGRESS}
+``The Effectiveness of Local Flavored E-Cigarette Bans''\\
+with Kara Jones and Danna Thomas
+
+%==================================================================
+% HONORS, GRANTS AND SCHOLARSHIPS
+%==================================================================
+\section*{HONORS, GRANTS AND SCHOLARSHIPS}
+\cvrow{2026}{\href{https://www.sc.edu/about/offices_and_divisions/research/news_and_pubs/news/2026/sparc_2026.php}{SPARC Graduate Research Grant} (\$5,000), University of South Carolina Office of Research}
+\cvrow{2026}{\href{https://sc.edu/study/colleges_schools/graduate_school/tuition-funding/travel_grants/}{Graduate School Travel Grant} (\$800), University of South Carolina Graduate School}
+\cvrow{2025}{Melayne Morgan McInnes Memorial Award for Best Third-Year Paper (\$1,000), University of South Carolina Moore School of Business}
+\cvrow{2022}{Summer Program Scholar, American Economic Association (AEA)}
+\cvrow{2018--2022}{Pledge Scholar, University of Tennessee}
+
+%==================================================================
+% PRESENTATIONS
+%==================================================================
 \section*{PRESENTATIONS}
-    ``OZs \& Housing Supply: Do Place-Based Tax Subsidies Create Net New Construction?" 
-        \begin{itemize}
-            \item American Real Estate and Urban Economics Association International Conference (Accepted) \hfill July 2026
-        \end{itemize}
-    ``Opportunity for Affordability: Tax Incentives and Rental Housing Markets" 
-        \begin{itemize}
-            \item Southern Economics Association \hfill November 2025
-            \item American Economic Association Summer Pipeline Conference \hfill June 2025
-        \end{itemize}
-    ``The Effectiveness of Local Flavored E-Cigarette Bans" 
-        \begin{itemize}
-            \item Association for Public Policy and Management Conference \hfill September 2024
-            \item American Economic Association Summer Pipeline Conference \hfill June 2024
-        \end{itemize}
-% %------------------------------------------------------------------
-% \section*{NON PEER-REVIEWED POLICY REPORTS}
-%     Financial Implications of Ending ACA Tax Credits in South Carolina (with Orgul Ozturk and Marli Finchner), \\ \textit{South Carolina Economic Policy Center}, February 2025
-%------------------------------------------------------------------
-\newpage
-\section*{RESEARCH EXPERIENCE}
-        Economics Department, The University of South Carolina Moore School of Business
-            \begin{itemize}
-                \item \textit{Research Assistant for Professor Crystal Zhan} \hfill Summer 2025
-                \item \textit{Research Assistant for Professor Danna Thomas} \hfill Spring 2024 - Fall 2024
-                \item \textit{Research Assistant for Professor Crystal Zhan} \hfill Fall 2023
-                \item \textit{Research Assistant for Professor Kin Blackburn} \hfill Spring 2022
-            \end{itemize}
-        Economics Department, The University of Tennessee Haslam School of Business
-            \begin{itemize}
-                \item  \textit{Research Assistant for Professor Maria Padilla-Romo} \hfill Fall 2021 - Spring 2022
-            \end{itemize}
-%------------------------------------------------------------------
-\section*{TEACHING EXPERIENCE}
-        Economics Department, The University of South Carolina Moore School of Business
-            \begin{itemize}
-            	\item \textit{Primary Instructor for Introduction to Economics} \hfill Spring 2026
-            	\item \textit{Teaching Assistant for Professor Lois Miller} \hfill Spring 2026
-                \item \textit{Teaching Assistant for Professor Sang Min Lee} \hfill Spring 2025
-                \item \textit{Teaching Assistant for Professor Danna Thomas} \hfill Spring - Fall 2024
-                \item \textit{Teaching Assistant for Professor Tamara Sheldon} \hfill Fall 2023
-            \end{itemize}
+\cvrow{2026}{American Economic Association (AEA) Summer Mentoring Pipeline Conference; American Real Estate and Urban Economics Association (AREUEA) International Conference \textit{(Accepted)}}
+\cvrow{2025}{Southern Economics Association (SEA) Annual Conference; American Economic Association (AEA) Summer Mentoring Pipeline Conference}
+\cvrow{2024}{Association for Public Policy and Management (APPAM) Annual Conference; American Economic Association (AEA) Summer Mentoring Pipeline Conference}
 
-%------------------------------------------------------------------
-\section*{AWARDS AND HONORS}
-        \par \href{https://www.sc.edu/about/offices_and_divisions/research/news_and_pubs/news/2026/sparc_2026.php}{SPARC Graduate Research Grant} (\$5,000), \textit{The University of South Carolina Office of Research} \hfill 2026
-        \vspace{0.3cm}
-        \newline Melayne Morgan McInnes Memorial Award for Best Third-Year Paper, \textit{The University of South Carolina Moore School of Business Economics Department} \hfill 2025
-        \vspace{0.3cm}
-        \newline Summer Program Scholar, \textit{American Economic Association} \hfill 2022
-        \vspace{0.3cm}
-        \newline Pledge Scholar, \textit{The University of Tennessee} \hfill 2018-2022
-        
-%------------------------------------------------------------------
+%==================================================================
+% TEACHING
+%==================================================================
+\section*{TEACHING POSITIONS}
+Department of Economics, University of South Carolina Moore School of Business
+\vspace{4pt}
+
+\textbf{Instructor of Record}\\[3pt]
+\cvrow{Spring 2026}{Introduction to Economics}
+
+\vspace{2pt}
+\textbf{Teaching Assistant}\\[3pt]
+\cvrow{Spring 2026}{Professor Lois Miller}
+\cvrow{Spring 2025}{Professor Sang Min Lee}
+\cvrow{Spring--Fall 2024}{Professor Danna Thomas}
+\cvrow{Fall 2023}{Professor Tamara Sheldon}
+
+%==================================================================
+% RELEVANT POSITIONS HELD
+%==================================================================
+\section*{RESEARCH POSTIONS}
+\cvrow{2025--2026}{Research Assistant to Professor Jason DeBacker, University of South Carolina}
+\cvrow{Summer 2025}{Research Assistant to Professor Crystal Zhan, University of South Carolina}
+\cvrow{Spring 2025}{Research Assistant to Professor Jason DeBacker, University of South Carolina}
+\cvrow{2024}{Research Assistant to Professor Danna Thomas, University of South Carolina}
+\cvrow{Fall 2023}{Research Assistant to Professor Crystal Zhan, University of South Carolina}
+\cvrow{2022--2023}{Research Assistant to Professor Jason DeBacker, University of South Carolina}
+\cvrow{Spring 2022}{Research Assistant to Professor Kin Blackburn, University of South Carolina}
+\cvrow{2021--2022}{Research Assistant to Professor Maria Padilla-Romo, University of Tennessee}
+
+%==================================================================
+% RELEVANT EXPERIENCE
+%==================================================================
+\section*{RELEVANT EXPERIENCE}
+\cvrow{Aug. 2025--present}{Workforce Data Scientist (part-time), South Carolina Department of Employment and Workforce}
+
+%==================================================================
+% PROFESSIONAL DEVELOPMENT
+%==================================================================
+\section*{PROFESSIONAL DEVELOPMENT}
+\cvrow{2026}{Job Market Boot Camp, American Economic Association (AEA) Summer Mentoring Pipeline Conference}
+\cvrow{2025}{Summer School in Urban Economics, Urban Economics Association, Tufts University}
+\cvrow{2024}{Applied Data Analytics Training, Coleridge Initiative (confidential micro-data, record linkage, and machine learning)}
+\cvrow{2022}{Summer Training Program, American Economic Association (AEA)}
+
+%==================================================================
+% SKILLS
+%==================================================================
+\section*{SKILLS}
+\textbf{Statistical Software / Programming:} Python, SQL, Stata, R \\
+\textbf{Quantitative Methods:} Causal inference, regression, predictive modeling, machine learning \\
+\textbf{Data Skills:} Collection, cleaning, validation, documentation, and dissemination of large datasets \\
+\textbf{Languages:} English (fluent), Spanish (fluent) \\
+\textbf{Service:} First-Generation Graduate Mentor, University of South Carolina, 2024--2025
+
+%==================================================================
+% SERVICE
+%==================================================================
 \section*{SERVICE}
-        First-Generation Graduate Mentor, \textit{The University of South Carolina} \hfill 2024--2025
+First-Generation Graduate Mentor, University of South Carolina, 2024--2025
 
-
-%------------------------------------------------------------------
-\section*{SKILLS SUMMARY}
-    \textbf{Software/Languages:} Python, SQL, Stata, R \\
-    \textbf{Methodological Skills:} Causal inference, Machine learning \\
-    \textbf{Languages:} English (fluent), Spanish (native)
-
-%------------------------------------------------------------------
-\section*{PROFESSIONAL EXPERIENCE}
-    \par Workforce Data Scientist (part-time), \textit{SC Department of Employment and Workforce} \hfill Aug 2025--present \\
-    \par Office of Compensation and Working Conditions Intern, \textit{Bureau of Labor Statistics} \hfill May--July 2022 \\
-
-%------------------------------------------------------------------
+%==================================================================
+% REFERENCES
+%==================================================================
 \section*{REFERENCES}
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
 \textbf{Dr. Jason DeBacker} \\
 Associate Professor of Economics \\
-The University of South Carolina \\
-Email: \href{mailto:jason.debacker@moore.sc.edu}{jason.debacker@moore.sc.edu} \\
-Phone: (770) 289-0340 \\
+University of South Carolina \\
+\href{mailto:jason.debacker@moore.sc.edu}{jason.debacker@moore.sc.edu} \\
+(770) 289-0340 \\
 Relationship: Graduate Research Advisor
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
 \textbf{Dr. Danna Thomas} \\
 Assistant Professor of Economics \\
-The University of South Carolina \\
-Email: \href{mailto:danna.thomas@moore.sc.edu}{danna.thomas@moore.sc.edu} \\
-Phone: (256) 452-7415 \\
+University of South Carolina \\
+\href{mailto:danna.thomas@moore.sc.edu}{danna.thomas@moore.sc.edu} \\
+(256) 452-7415 \\
 Relationship: Faculty Mentor
 \end{minipage}
-
 
 \end{document}

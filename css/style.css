@@ -269,9 +269,7 @@ h2.section-title {
   color: var(--navy);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--navy);
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.4rem;
 }
 
 /* --- Paper list --- */

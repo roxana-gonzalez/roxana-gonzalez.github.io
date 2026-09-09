@@ -159,22 +159,33 @@ nav .nav-links a.active {
 .profile-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
-  margin-top: 1.4rem;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0.4rem;
 }
 
 .profile-links a {
-  font-size: 0.83rem;
-  border: 1px solid var(--border);
-  border-radius: 3px;
-  padding: 0.28rem 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.87rem;
+  font-weight: 550;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  padding: 0.42rem 0.9rem;
   color: var(--blue);
-  background: var(--bg-alt);
-  transition: border-color 0.15s, background 0.15s;
+  background: var(--bg);
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+.profile-links a svg {
+  width: 1.02em;
+  height: 1.02em;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 .profile-links a:hover {
+  background: var(--blue);
   border-color: var(--blue);
-  background: var(--blue-lt);
+  color: #fff;
   text-decoration: none;
 }
 

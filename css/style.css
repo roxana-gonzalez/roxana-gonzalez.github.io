@@ -380,6 +380,18 @@ h2.section-title {
   margin-top: 0.1rem;
 }
 
+/* --- About page --- */
+.about-section {
+  max-width: 46rem;
+  padding-bottom: 3rem;
+}
+.about-section p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.1rem;
+}
+.about-section p:last-child { margin-bottom: 0; }
+
 /* --- CV page --- */
 .cv-section {
   padding-bottom: 3rem;

@@ -450,6 +450,18 @@ h2.section-title {
 }
 
 /* --- About page --- */
+.about-photo {
+  margin-bottom: 2rem;
+}
+.about-photo img {
+  display: block;
+  width: 100%;
+  max-width: 46rem;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
 .about-section {
   max-width: 46rem;
   padding-bottom: 3rem;

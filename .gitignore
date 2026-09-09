@@ -31,3 +31,7 @@
 .DS_Store
 desktop.ini
 Thumbs.db
+
+# --- Unpublished paper drafts ---
+/OZ_Housing_draft.pdf
+/ETI_LLM_Paper*.pdf

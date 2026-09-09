@@ -137,7 +137,7 @@ nav .nav-links a.active {
 }
 
 .profile-info h1 {
-  font-size: 1.75rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: var(--navy);
   line-height: 1.2;
@@ -226,7 +226,7 @@ nav .nav-links a.active {
   margin-bottom: 0.5rem;
 }
 .home-jmp h2 {
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 600;
   color: var(--navy);
   line-height: 1.35;
@@ -264,12 +264,12 @@ nav .nav-links a.active {
 
 /* --- Section headings --- */
 h2.section-title {
-  font-size: 1.05rem;
+  font-size: 1.4rem;
   font-weight: 650;
   color: var(--navy);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 1.4rem;
+  letter-spacing: 0.045em;
+  margin-bottom: 1.5rem;
 }
 
 /* --- Paper list --- */
@@ -305,7 +305,7 @@ h2.section-title {
 }
 
 .paper-item h3 {
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 600;
   color: var(--navy);
   line-height: 1.35;
@@ -389,7 +389,7 @@ h2.section-title {
   padding-bottom: 2.9rem;
 }
 .teaching-heading {
-  font-size: 0.76rem;
+  font-size: 0.85rem;
   font-weight: 650;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -449,7 +449,8 @@ h2.section-title {
 
 /* --- About page --- */
 .about-photo {
-  margin-bottom: 2rem;
+  margin-top: 0.6rem;
+  padding-bottom: 3rem;
 }
 .about-photo img {
   display: block;
@@ -462,7 +463,7 @@ h2.section-title {
 
 .about-section {
   max-width: 46rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
 }
 .about-section p {
   font-size: 0.95rem;

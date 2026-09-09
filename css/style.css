@@ -189,6 +189,62 @@ nav .nav-links a.active {
   text-decoration: none;
 }
 
+/* --- Home: job market badge --- */
+.jm-badge {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: var(--blue-lt);
+  border-radius: 3px;
+  padding: 0.22rem 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+/* --- Home: contact line --- */
+.contact-line {
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin-top: 1.1rem;
+  line-height: 1.7;
+}
+.contact-line strong { color: var(--text); font-weight: 550; }
+
+/* --- Home: job market paper highlight --- */
+.home-jmp {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0 3rem;
+}
+.home-jmp .jmp-label {
+  font-size: 0.76rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+}
+.home-jmp h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+.home-jmp .jmp-finding {
+  font-size: 0.93rem;
+  color: var(--text);
+  line-height: 1.7;
+  max-width: 44rem;
+  margin-bottom: 0.9rem;
+}
+.home-jmp .paper-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 /* --- Fields of interest --- */
 .fields {
   border-top: 1px solid var(--border);
@@ -290,7 +346,8 @@ h2.section-title {
   flex-wrap: wrap;
   font-size: 0.83rem;
 }
-.paper-item .paper-links a {
+.paper-item .paper-links a,
+.home-jmp .paper-links a {
   display: inline-block;
   padding: 0.15rem 0.6rem;
   border: 1px solid var(--border);
@@ -303,7 +360,8 @@ h2.section-title {
   line-height: 1.6;
   transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
-.paper-item .paper-links a:hover {
+.paper-item .paper-links a:hover,
+.home-jmp .paper-links a:hover {
   background: var(--blue-lt);
   border-color: var(--blue);
   color: var(--navy);

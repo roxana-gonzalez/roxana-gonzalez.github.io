@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------
+# This repo is published publicly via GitHub Pages.
+# Anything committed here is world-readable, permanently.
+# Keep job-search and personal material out.
+# ---------------------------------------------------------------
+
+# --- Private: job search materials ---
+/files/cover letters/
+/files/cv_jobs/
+/files/refs/
+/files/transcripts/
+/cover letter*.docx
+/jobs.xlsx
+/job_posting_raw.html
+/coursework_phd.txt
+/Questions for*.txt
+
+# --- LaTeX build artifacts ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# --- Office / OS junk ---
+~$*
+.DS_Store
+desktop.ini
+Thumbs.db

@@ -32,6 +32,7 @@
 desktop.ini
 Thumbs.db
 
-# --- Unpublished paper drafts ---
+# --- Unpublished drafts and unused assets ---
 /OZ_Housing_draft.pdf
 /ETI_LLM_Paper*.pdf
+/files/headshot_s.png

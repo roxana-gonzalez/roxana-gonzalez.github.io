@@ -106,7 +106,7 @@ nav .nav-links a.active {
 /* --- Home page: profile block --- */
 .profile {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 280px 1fr;
   gap: 2.4rem;
   padding: 3.2rem 0 2.8rem;
   align-items: start;
@@ -114,40 +114,9 @@ nav .nav-links a.active {
 
 .profile-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-  display: block;
-}
-
-.profile-photo {
-  width: 320px;
-  height: 400px;
-  background: var(--blue-lt);
+  height: auto;
   border: 1px solid var(--border);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-size: 0.75rem;
-  text-align: center;
-  line-height: 1.4;
-  flex-shrink: 0;
-}
-
-.profile-info h1 {
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.2;
-  margin-bottom: 0.25rem;
-}
-
-.profile-info .affiliation {
-  font-size: 0.92rem;
-  color: var(--muted);
-  margin-bottom: 1.2rem;
+  display: block;
 }
 
 .profile-info p {
@@ -159,48 +128,25 @@ nav .nav-links a.active {
 .profile-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 1.5rem 0 0.4rem;
+  gap: 1.1rem;
+  margin-top: 0.7rem;
 }
 
 .profile-links a {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  font-size: 0.87rem;
-  font-weight: 550;
-  border: 1px solid var(--blue);
-  border-radius: 4px;
-  padding: 0.42rem 0.9rem;
-  color: var(--blue);
-  background: var(--bg);
-  transition: color 0.15s, background 0.15s, border-color 0.15s;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--muted);
 }
 .profile-links a svg {
-  width: 1.02em;
-  height: 1.02em;
+  width: 0.95em;
+  height: 0.95em;
   fill: currentColor;
   flex-shrink: 0;
 }
 .profile-links a:hover {
-  background: var(--blue);
-  border-color: var(--blue);
-  color: #fff;
-  text-decoration: none;
-}
-
-/* --- Home: job market badge --- */
-.jm-badge {
-  display: inline-block;
-  font-size: 0.76rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: var(--blue);
-  background: var(--blue-lt);
-  border-radius: 3px;
-  padding: 0.22rem 0.6rem;
-  margin-bottom: 0.9rem;
 }
 
 /* --- Home: contact line --- */
@@ -534,8 +480,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .profile-photo {
-    width: 80px;
-    height: 100px;
+    max-width: 220px;
   }
   nav .nav-links {
     gap: 1rem;

@@ -117,17 +117,29 @@ nav .nav-links a.active {
 .profile {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: 2.4rem;
+  column-gap: 2.4rem;
   padding: 3.2rem 0 2.8rem;
   align-items: start;
 }
 
+/* Photo and links join the profile grid so the text can align to the photo's bottom edge */
+.profile-photo { display: contents; }
+
 .profile-photo img {
+  grid-column: 1;
+  grid-row: 1;
   width: 100%;
   height: auto;
   border: 1px solid var(--border);
   display: block;
 }
+
+.profile-info {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+}
+.profile-info > :last-child { margin-bottom: 0; }
 
 .profile-info p {
   font-size: 0.95rem;
@@ -140,6 +152,8 @@ nav .nav-links a.active {
   flex-wrap: wrap;
   gap: 1.1rem;
   margin-top: 0.7rem;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .profile-links a {
@@ -489,8 +503,18 @@ footer {
   .profile {
     grid-template-columns: 1fr;
   }
+  .profile {
+    row-gap: 1.5rem;
+  }
   .profile-photo {
+    display: block;
     max-width: 220px;
+  }
+  .profile-photo img,
+  .profile-links,
+  .profile-info {
+    grid-column: auto;
+    grid-row: auto;
   }
   nav .nav-links {
     gap: 1rem;

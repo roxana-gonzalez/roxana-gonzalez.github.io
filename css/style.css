@@ -38,6 +38,16 @@ a {
 }
 a:hover { text-decoration: underline; }
 
+/* Hidden visually but read by screen readers and search engines */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 /* --- Layout --- */
 .site-wrapper {
   max-width: var(--max-w);
